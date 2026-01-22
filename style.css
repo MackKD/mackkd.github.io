@@ -35,7 +35,12 @@ ul {
 }
 
 /* Typography */
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     font-weight: 700;
     color: white;
     margin-bottom: 1rem;
@@ -122,7 +127,8 @@ section {
     border-image-slice: 1;
     background: transparent;
     color: white;
-    border: 2px solid transparent; /* Fallback */
+    border: 2px solid transparent;
+    /* Fallback */
     position: relative;
 }
 
@@ -218,7 +224,7 @@ nav .container {
 .card:hover {
     transform: translateY(-5px);
     border-color: var(--neon-purple);
-    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
 }
 
 .card h3 {
@@ -267,13 +273,111 @@ footer {
     color: var(--neon-purple);
 }
 
-/* Media Queries */
+/* Media Queries & Responsive Design */
+
+/* 
+   Breakpoints based on common device widths:
+   - Mobile: < 480px
+   - Tablet/Large Phone: 481px - 768px
+   - Small Laptop/Tablet Landscape: 769px - 1024px
+   - Desktop: 1025px - 1440px
+   - Large Screens: > 1440px
+*/
+
+/* 1. Tablet & Mobile (Max Width 768px) */
 @media (max-width: 768px) {
     h1 {
         font-size: 2.5rem;
     }
-    
+
+    h2 {
+        font-size: 2rem;
+    }
+
+    /* Container padding adjustment */
+    .container {
+        padding: 0 1.5rem;
+    }
+
+    /* Navigation */
+    nav .container {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
     .nav-links {
-        display: none; /* Mobile menu implementation usually needs JS, keeping simple for now */
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 1rem;
+    }
+
+    /* Hero Section */
+    .hero {
+        text-align: center;
+        padding-top: 8rem;
+        /* account for taller fixed nav */
+        height: auto;
+        min-height: 100vh;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .hero p {
+        margin: 1.5rem auto 2rem;
+    }
+
+    /* Grid adjustments */
+    .grid {
+        gap: 1.5rem;
+    }
+}
+
+/* 2. Mobile Small (Max Width 480px) */
+@media (max-width: 480px) {
+    h1 {
+        font-size: 2rem;
+    }
+
+    .btn {
+        width: 100%;
+        /* Full width buttons on mobile */
+        text-align: center;
+    }
+
+    .grid {
+        grid-template-columns: 1fr;
+        /* Single column */
+    }
+}
+
+/* 3. Small Laptop / Tablet Landscape (769px - 1024px) */
+@media (min-width: 769px) and (max-width: 1024px) {
+    .container {
+        max-width: 960px;
+    }
+
+    h1 {
+        font-size: 3rem;
+    }
+}
+
+/* 4. Desktop (1025px - 1440px) */
+@media (min-width: 1025px) and (max-width: 1440px) {
+    .container {
+        max-width: 1140px;
+    }
+}
+
+/* 5. Large Screens (> 1440px) */
+@media (min-width: 1441px) {
+    .container {
+        max-width: 1320px;
+        font-size: 1.1rem;
+        /* Slightly larger text for big screens */
+    }
+
+    h1 {
+        font-size: 4rem;
     }
 }
