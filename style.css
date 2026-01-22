@@ -186,7 +186,9 @@ nav .container {
 
 /* Hero Section */
 .hero {
-    height: 100vh;
+    min-height: 100vh;
+    padding-top: 8rem;
+    /* Ensure content clears fixed nav */
     display: flex;
     align-items: center;
     position: relative;
