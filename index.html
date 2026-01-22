@@ -1,11 +1,171 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mackenzie Korevaar-Dorsey | Cybersecurity Specialist</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=JetBrains+Mono:wght@400;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Placeholder for icons if needed -->
+</head>
+
 <body>
 
-<h1>Mack's Site... in progress CALM DOWN more coming soonish!!</h1>
-<p>This site is currently being worked on...</p>
-<p>Mackenzie Korevaar-Dorsey is a student at WGU curretly focused on cybersecurity and computer science. Please feel free to reach out to him at:
-<a href="mailto:mkorevaardorsey@gmail.com">Mack's Email</a> with job offers or any advice/tips on security or CS.</p>
+    <!-- Navigation -->
+    <nav>
+        <div class="container">
+            <a href="#" class="logo">&lt;MackKD /&gt;</a>
+            <div class="nav-links">
+                <a href="#about">About</a>
+                <a href="#projects">Projects</a>
+                <a href="#skills">Skills</a>
+                <a href="#contact">Contact</a>
+                <a href="Resume.pdf" target="_blank" class="btn-glow"
+                    style="padding: 0.5rem 1rem; font-size: 0.8rem;">Resume</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container hero-content">
+            <h3>Hi, my name is</h3>
+            <h1>Mackenzie <span class="text-gradient">Korevaar-Dorsey</span></h1>
+            <h2 style="font-size: 2rem; margin-top: 1rem; color: var(--text-secondary);">I build secure digital
+                fortresses.</h2>
+            <p>I am a cybersecurity student at Western Governors University and an aspiring Red Teamer. I specialize in
+                network security, challenge design, and bringing a security-first mindset to everything I build.</p>
+            <a href="#projects" class="btn btn-glow">Check out my work</a>
+        </div>
+    </section>
+
+    <!-- Certification & Education Section -->
+    <section id="about">
+        <div class="container">
+            <h2>Education & Certifications</h2>
+            <div class="grid">
+                <!-- Education -->
+                <div class="card">
+                    <h3><i class="fas fa-university" style="color: var(--neon-blue);"></i> Education</h3>
+                    <h4 style="color: white;">Western Governors University</h4>
+                    <p style="margin-top: 0.5rem; color: var(--text-secondary);">B.S. Cybersecurity and Information
+                        Assurance</p>
+                    <p style="margin-top: 0.5rem; font-size: 0.9rem;">Currently Attending</p>
+                </div>
+
+                <!-- Certs -->
+                <div class="card">
+                    <h3><i class="fas fa-certificate" style="color: var(--neon-purple);"></i> Certifications</h3>
+                    <ul style="color: var(--text-secondary); list-style: disc; padding-left: 1.2rem;">
+                        <li style="margin-bottom: 0.5rem;"><strong>CompTIA Security+</strong></li>
+                        <li style="margin-bottom: 0.5rem;"><strong>CompTIA Network+</strong></li>
+                        <li style="margin-bottom: 0.5rem;"><strong>CompTIA A+</strong></li>
+                        <li><strong>ITIL Foundation</strong></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience & Projects Section -->
+    <section id="projects">
+        <div class="container">
+            <h2>Experience & Projects</h2>
+            <div class="grid">
+                <!-- Red Team Association -->
+                <div class="card">
+                    <div style="display: flex; justify-content: space-between; align-items: start;">
+                        <h3>Red Team Association</h3>
+                        <span style="font-family: var(--font-mono); font-size: 0.8rem; color: var(--neon-blue);">2025 -
+                            Present</span>
+                    </div>
+                    <p style="color: var(--text-secondary); margin-bottom: 1rem;">Collaborated with a team of security
+                        professionals to design and implement CTF challenges.</p>
+                    <ul style="list-style: none;">
+                        <li style="margin-bottom: 0.5rem; font-size: 0.95rem;">Designed a custom challenge for
+                            <strong>BSides Seattle 2025</strong>.
+                        </li>
+                        <li style="margin-bottom: 0.5rem; font-size: 0.95rem;">Returning to design new challenges for
+                            <strong>BSides Seattle 2026</strong>.
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Placeholder Project -->
+                <div class="card">
+                    <h3>Portfolio Website</h3>
+                    <p style="color: var(--text-secondary); margin-bottom: 1rem;">Designed and built this portfolio
+                        website to showcase my skills and experience.</p>
+                    <div class="skills-container">
+                        <span class="skill-tag">HTML5</span>
+                        <span class="skill-tag">CSS3</span>
+                        <span class="skill-tag">Design</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills">
+        <div class="container">
+            <h2>Technical Skills</h2>
+            <div class="grid">
+                <div class="card">
+                    <h3 style="color: var(--neon-blue);">Core Competencies</h3>
+                    <div class="skills-container">
+                        <span class="skill-tag">Network Security</span>
+                        <span class="skill-tag">Penetration Testing</span>
+                        <span class="skill-tag">Risk Management</span>
+                        <span class="skill-tag">Incident Response</span>
+                    </div>
+                </div>
+                <div class="card">
+                    <h3 style="color: var(--neon-purple);">Technologies</h3>
+                    <div class="skills-container">
+                        <span class="skill-tag">Python</span>
+                        <span class="skill-tag">Linux</span>
+                        <span class="skill-tag">Wireshark</span>
+                        <span class="skill-tag">Nmap</span>
+                        <span class="skill-tag">Bash Scripting</span>
+                        <span class="skill-tag">Git</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" style="text-align: center; padding-bottom: 8rem;">
+        <div class="container">
+            <h2 style="display: block; margin-bottom: 1rem;">Get In Touch</h2>
+            <p style="max-width: 600px; margin: 0 auto 3rem; color: var(--text-secondary);">Currently looking for new
+                opportunities. Whether you have a question or just want to say hi, my inbox is always open.</p>
+            <a href="mailto:mkorevaardorsey@gmail.com" class="btn btn-glow"
+                style="padding: 1rem 2rem; font-size: 1.1rem;">Say Hello</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="social-links">
+                <!-- Note: Add actual links if you have them -->
+                <a href="#" target="_blank" title="LinkedIn">in</a>
+                <!-- Placeholder text until icons load or fontawesome is fixed -->
+                <a href="#" target="_blank" title="GitHub">gh</a>
+            </div>
+            <p style="font-family: var(--font-mono); font-size: 0.8rem;">&copy; 2026 Mackenzie Korevaar-Dorsey. Built
+                with &hearts; and CSS.</p>
+        </div>
+    </footer>
 
 </body>
-</html> 
+
+</html>
