@@ -4,23 +4,40 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Mackenzie Korevaar-Dorsey - Security Engineer & Aspiring Red Teamer specializing in penetration testing, vulnerability research, CTF challenge design, and full-stack application development. Expert in Flask, Docker, and custom exploitation techniques.">
+    <meta name="keywords" content="cybersecurity, security engineer, red team, penetration testing, CTF, BSides, network security, vulnerability research, Flask, Docker, API development, CTF challenge design">
+    <meta name="author" content="Mackenzie Korevaar-Dorsey">
+    <meta name="theme-color" content="#050505">
+    <link rel="manifest" href="manifest.json">
+
+    <!-- Security Headers -->
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com https://cdnjs.cloudflare.com; font-src 'self' https://fonts.gstatic.com https://cdnjs.cloudflare.com; script-src 'self' 'unsafe-inline'; img-src 'self' data:; connect-src 'self';">
+    <meta http-equiv="X-Content-Type-Options" content="nosniff">
+    <meta http-equiv="X-Frame-Options" content="DENY">
+    <meta name="referrer" content="strict-origin-when-cross-origin">
+
     <title>Mackenzie Korevaar-Dorsey | Cybersecurity Specialist</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="dns-prefetch" href="https://cdnjs.cloudflare.com">
     <link
         href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=JetBrains+Mono:wght@400;700&display=swap"
-        rel="stylesheet">
+        rel="stylesheet"
+        crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <!-- Placeholder for icons if needed -->
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+          integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+          crossorigin="anonymous"
+          referrerpolicy="no-referrer">
 </head>
 
 <body>
 
     <!-- Navigation -->
-    <nav>
+    <nav aria-label="Main navigation">
         <div class="container">
-            <a href="#" class="logo">&lt;MackKD /&gt;</a>
+            <a href="#" class="logo" aria-label="Home">&lt;MackKD /&gt;</a>
             <div class="nav-links">
                 <a href="#about">About</a>
                 <a href="#projects">Projects</a>
@@ -35,14 +52,14 @@
         <div class="container hero-content">
             <h3>Hello, I am</h3>
             <h1>Mackenzie <span class="text-gradient">Korevaar-Dorsey</span></h1>
-            <h2 style="font-size: 2rem; margin-top: 1rem; color: var(--text-secondary);">Security Engineer & Aspiring
-                Red Teamer</h2>
+            <h2 class="subtitle-large">Security Engineer & Aspiring Red Teamer</h2>
             <p>As a dedicated cybersecurity student and active security practitioner, I bridge the gap between academic
-                theory and real-world offensive operations. I am passionate about challenge design, network defense, and
-                securing the digital landscape.</p>
-            <div style="display: flex; gap: 1rem; flex-wrap: wrap;">
+                theory and real-world offensive operations. Specializing in vulnerability research, CTF challenge design,
+                and full-stack application development, I create realistic security scenarios using Flask, Docker, and
+                custom exploitation techniques to advance the security community.</p>
+            <div class="flex-gap">
                 <a href="#projects" class="btn btn-glow">View Operations</a>
-                <a href="Resume.pdf" target="_blank" class="btn">Download Resume</a>
+                <a href="Resume.pdf" target="_blank" rel="noopener noreferrer" class="btn">Download Resume</a>
             </div>
         </div>
     </section>
@@ -54,21 +71,19 @@
             <div class="grid">
                 <!-- Education -->
                 <div class="card">
-                    <h3><i class="fas fa-university" style="color: var(--neon-blue);"></i> Education</h3>
-                    <h4 style="color: white;">Western Governors University</h4>
-                    <p style="margin-top: 0.5rem; color: var(--text-secondary);">B.S. Cybersecurity and Information
-                        Assurance</p>
-                    <p style="margin-top: 0.5rem; font-size: 0.9rem;">Current Student | Focus: Network Defense &
-                        Offensive Security</p>
+                    <h3><i class="fas fa-university icon-colored-blue"></i> Education</h3>
+                    <h4 class="text-white">Western Governors University</h4>
+                    <p class="job-title">B.S. Cybersecurity and Information Assurance</p>
+                    <p class="location-text">Current Student | Focus: Network Defense & Offensive Security</p>
                 </div>
 
                 <!-- Certs -->
                 <div class="card">
-                    <h3><i class="fas fa-certificate" style="color: var(--neon-purple);"></i> Certifications</h3>
-                    <ul style="color: var(--text-secondary); list-style: disc; padding-left: 1.2rem;">
-                        <li style="margin-bottom: 0.5rem;"><strong>CompTIA Security+</strong></li>
-                        <li style="margin-bottom: 0.5rem;"><strong>CompTIA Network+</strong></li>
-                        <li style="margin-bottom: 0.5rem;"><strong>CompTIA A+</strong></li>
+                    <h3><i class="fas fa-certificate icon-colored-purple"></i> Certifications</h3>
+                    <ul class="list-disc">
+                        <li class="list-item-spaced"><strong>CompTIA Security+</strong></li>
+                        <li class="list-item-spaced"><strong>CompTIA Network+</strong></li>
+                        <li class="list-item-spaced"><strong>CompTIA A+</strong></li>
                         <li><strong>ITIL Foundation</strong></li>
                     </ul>
                 </div>
@@ -80,47 +95,34 @@
     <section id="professional-experience">
         <div class="container">
             <h2>Professional Experience</h2>
-            <div class="card" style="margin-bottom: 2rem;">
-                <div
-                    style="display: flex; justify-content: space-between; align-items: start; flex-wrap: wrap; gap: 0.5rem;">
+            <div class="card card-mb">
+                <div class="flex-between">
                     <h3>Columbia Electric Supply</h3>
-                    <span style="font-family: var(--font-mono); font-size: 0.9rem; color: var(--neon-blue);">Jan 2024 -
-                        Present</span>
+                    <span class="date-badge">Jan 2024 - Present</span>
                 </div>
-                <h4 style="color: var(--text-secondary); font-size: 1rem; margin-bottom: 0.5rem;">Inside Sales</h4>
-                <p style="color: var(--text-secondary); font-size: 0.9rem; margin-bottom: 1rem;">Yakima, WA · On-site
-                </p>
-                <ul style="list-style: none; padding-left: 0;">
-                    <li style="margin-bottom: 1rem; position: relative; padding-left: 1.5rem;">
-                        <i class="fas fa-chevron-right"
-                            style="position: absolute; left: 0; top: 5px; color: var(--neon-purple); font-size: 0.8rem;"></i>
+                <h4 class="job-title">Inside Sales</h4>
+                <p class="location-text">Yakima, WA · On-site</p>
+                <ul class="list-unstyled">
+                    <li class="list-item-with-icon-lg">
+                        <i class="fas fa-chevron-right list-icon"></i>
                         <strong>Tier 1 Help Desk Support:</strong> Lead support for the local branch, including:
-                        <ul
-                            style="list-style: disc; padding-left: 1.5rem; margin-top: 0.5rem; color: var(--text-secondary);">
-                            <li style="margin-bottom: 0.3rem;">Configuring and managing DHCP, WAN/LAN, VOIP, and subnet
-                                systems.</li>
-                            <li style="margin-bottom: 0.3rem;">Managed modernization updates: upgrading outdated DSL to
-                                fiber optic connections, modernizing/adding access points for complete coverage.</li>
+                        <ul class="list-disc">
+                            <li class="list-item-spaced">Configuring and managing DHCP, WAN/LAN, VOIP, and subnet systems.</li>
+                            <li class="list-item-spaced">Managed modernization updates: upgrading outdated DSL to fiber optic connections, modernizing/adding access points for complete coverage.</li>
                             <li>Creating and maintaining technical documentation for processes.</li>
                         </ul>
                     </li>
-                    <li style="margin-bottom: 0.5rem; position: relative; padding-left: 1.5rem;">
-                        <i class="fas fa-chevron-right"
-                            style="position: absolute; left: 0; top: 5px; color: var(--neon-purple); font-size: 0.8rem;"></i>
-                        Generated sales leads, contacted customers, prepared quotes, and closed deals to exceed sales
-                        targets.
+                    <li class="list-item-with-icon">
+                        <i class="fas fa-chevron-right list-icon"></i>
+                        Generated sales leads, contacted customers, prepared quotes, and closed deals to exceed sales targets.
                     </li>
-                    <li style="margin-bottom: 0.5rem; position: relative; padding-left: 1.5rem;">
-                        <i class="fas fa-chevron-right"
-                            style="position: absolute; left: 0; top: 5px; color: var(--neon-purple); font-size: 0.8rem;"></i>
-                        Managed customer database and collaborated with sales team, warehouse staff, and vendors for
-                        timely order delivery.
+                    <li class="list-item-with-icon">
+                        <i class="fas fa-chevron-right list-icon"></i>
+                        Managed customer database and collaborated with sales team, warehouse staff, and vendors for timely order delivery.
                     </li>
-                    <li style="margin-bottom: 0.5rem; position: relative; padding-left: 1.5rem;">
-                        <i class="fas fa-chevron-right"
-                            style="position: absolute; left: 0; top: 5px; color: var(--neon-purple); font-size: 0.8rem;"></i>
-                        Utilized direct sales, customer service, and cybersecurity skills to identify new business
-                        opportunities.
+                    <li class="list-item-with-icon">
+                        <i class="fas fa-chevron-right list-icon"></i>
+                        Utilized direct sales, customer service, and cybersecurity skills to identify new business opportunities.
                     </li>
                 </ul>
             </div>
@@ -131,29 +133,25 @@
     <section id="experience">
         <div class="container">
             <h2>Volunteer Experience</h2>
-            <div class="card" style="margin-bottom: 2rem;">
-                <div
-                    style="display: flex; justify-content: space-between; align-items: start; flex-wrap: wrap; gap: 0.5rem;">
+            <div class="card card-mb">
+                <div class="flex-between">
                     <h3>Red Team Association</h3>
-                    <span style="font-family: var(--font-mono); font-size: 0.9rem; color: var(--neon-blue);">2025 -
-                        Present</span>
+                    <span class="date-badge">2025 - Present</span>
                 </div>
-                <h4 style="color: var(--text-secondary); font-size: 1rem; margin-bottom: 1rem;">Security Engineer &
-                    Challenge Designer</h4>
-                <p style="color: var(--text-primary); margin-bottom: 1rem;">Active contributor to the security
-                    community, specializing in offensive security simulations and CTF architecture.</p>
-                <ul style="list-style: none; padding-left: 0;">
-                    <li style="margin-bottom: 0.5rem; position: relative; padding-left: 1.5rem;">
-                        <i class="fas fa-chevron-right"
-                            style="position: absolute; left: 0; top: 5px; color: var(--neon-purple); font-size: 0.8rem;"></i>
-                        Architected custom exploitation challenges for <strong>BSides Seattle 2025</strong>, focusing on
-                        realistic network attack vectors.
+                <h4 class="job-title mb-1">Security Engineer & Challenge Designer</h4>
+                <p class="mb-1">Active contributor to the security community, specializing in offensive security simulations and CTF architecture. Develop full-stack applications, custom vulnerabilities, and containerized infrastructure for large-scale security competitions.</p>
+                <ul class="list-unstyled">
+                    <li class="list-item-with-icon">
+                        <i class="fas fa-chevron-right list-icon"></i>
+                        Architected custom exploitation challenges for <strong>BSides Seattle 2025</strong>, including custom vulnerability implementation and automated patching solutions.
                     </li>
-                    <li style="margin-bottom: 0.5rem; position: relative; padding-left: 1.5rem;">
-                        <i class="fas fa-chevron-right"
-                            style="position: absolute; left: 0; top: 5px; color: var(--neon-purple); font-size: 0.8rem;"></i>
-                        Lead challenge designer for <strong>BSides Seattle 2026</strong>, coordinating a team of 3 to
-                        build a multi-stage AD compromise scenario.
+                    <li class="list-item-with-icon">
+                        <i class="fas fa-chevron-right list-icon"></i>
+                        Lead challenge designer for <strong>BSides Seattle 2026</strong>, developing Flask-based web applications with Docker containerization and API key authentication systems.
+                    </li>
+                    <li class="list-item-with-icon">
+                        <i class="fas fa-chevron-right list-icon"></i>
+                        Coordinate technical teams to build multi-stage Active Directory compromise scenarios and database-driven CTF infrastructure.
                     </li>
                 </ul>
             </div>
@@ -165,11 +163,72 @@
         <div class="container">
             <h2>Projects</h2>
             <div class="grid">
+                <!-- BSides 2025 CTF Challenge -->
+                <div class="card">
+                    <h3>CTF Challenge Creator - BSides Seattle 2025</h3>
+                    <p class="job-title mb-1">Architected and deployed a custom FTP service exploitation challenge featuring a preconfigured "pass the hash" vulnerability for BSides Seattle 2025, held at Microsoft Headquarters in Redmond with 1,500 attendees.</p>
+                    <ul class="list-unstyled mb-1">
+                        <li class="list-item-with-icon">
+                            <i class="fas fa-chevron-right list-icon"></i>
+                            Designed and implemented custom vulnerability from scratch in FTP service source code
+                        </li>
+                        <li class="list-item-with-icon">
+                            <i class="fas fa-chevron-right list-icon"></i>
+                            Deployed across 35 teams, generating 1,490 total flag submissions throughout competition
+                        </li>
+                        <li class="list-item-with-icon">
+                            <i class="fas fa-chevron-right list-icon"></i>
+                            Created source code-based challenge requiring code review to identify and patch vulnerability
+                        </li>
+                        <li class="list-item-with-icon">
+                            <i class="fas fa-chevron-right list-icon"></i>
+                            Developed automated patching script and published comprehensive writeup post-competition
+                        </li>
+                    </ul>
+                    <div class="skills-container">
+                        <span class="skill-tag">Vulnerability Research</span>
+                        <span class="skill-tag">FTP Protocol</span>
+                        <span class="skill-tag">Pass-the-Hash</span>
+                        <span class="skill-tag">Python</span>
+                        <span class="skill-tag">CTF Design</span>
+                    </div>
+                </div>
+
+                <!-- BSides 2026 CTF Challenge -->
+                <div class="card">
+                    <h3>CTF Challenge Creator - BSides Seattle 2026</h3>
+                    <p class="job-title mb-1">Developed a full-stack web application utilizing an internal database for search queries as part of BSides Seattle 2026 CTF competition infrastructure.</p>
+                    <ul class="list-unstyled mb-1">
+                        <li class="list-item-with-icon">
+                            <i class="fas fa-chevron-right list-icon"></i>
+                            Built Flask-based application with database integration for dynamic search functionality
+                        </li>
+                        <li class="list-item-with-icon">
+                            <i class="fas fa-chevron-right list-icon"></i>
+                            Implemented secure API key authentication and management system
+                        </li>
+                        <li class="list-item-with-icon">
+                            <i class="fas fa-chevron-right list-icon"></i>
+                            Automated deployment and startup processes using Dockerfiles for containerized environment
+                        </li>
+                        <li class="list-item-with-icon">
+                            <i class="fas fa-chevron-right list-icon"></i>
+                            Designed backend architecture to handle concurrent database queries across multiple teams
+                        </li>
+                    </ul>
+                    <div class="skills-container">
+                        <span class="skill-tag">Flask</span>
+                        <span class="skill-tag">Docker</span>
+                        <span class="skill-tag">Database Design</span>
+                        <span class="skill-tag">API Development</span>
+                        <span class="skill-tag">Python</span>
+                    </div>
+                </div>
+
                 <!-- Portfolio Project -->
                 <div class="card">
                     <h3>Portfolio Infrastructure</h3>
-                    <p style="color: var(--text-secondary); margin-bottom: 1rem;">Engineered this responsive portfolio
-                        to demonstrate frontend capabilities alongside security endeavors.</p>
+                    <p class="job-title mb-1">Engineered this responsive portfolio to demonstrate frontend capabilities alongside security endeavors.</p>
                     <div class="skills-container">
                         <span class="skill-tag">HTML5</span>
                         <span class="skill-tag">CSS3</span>
@@ -178,14 +237,11 @@
                 </div>
 
                 <!-- GitHub Link Card -->
-                <div class="card"
-                    style="display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center;">
-                    <h3><i class="fab fa-github"
-                            style="color: var(--neon-purple); font-size: 2rem; margin-bottom: 0.5rem;"></i></h3>
+                <div class="card flex-center">
+                    <h3><i class="fab fa-github icon-large icon-colored-purple"></i></h3>
                     <h3>Code Repositories</h3>
-                    <p style="color: var(--text-secondary); margin-bottom: 1.5rem;">Explore my security tools and
-                        scripting projects.</p>
-                    <a href="https://github.com/mackkd" target="_blank" class="btn btn-glow">Visit GitHub</a>
+                    <p class="job-title">Explore my security tools and scripting projects.</p>
+                    <a href="https://github.com/mackkd" target="_blank" rel="noopener noreferrer" class="btn btn-glow">Visit GitHub</a>
                 </div>
             </div>
         </div>
@@ -197,18 +253,23 @@
             <h2>Technical Arsenal</h2>
             <div class="grid">
                 <div class="card">
-                    <h3 style="color: var(--neon-blue);">Core Competencies</h3>
+                    <h3 class="icon-colored-blue">Core Competencies</h3>
                     <div class="skills-container">
                         <span class="skill-tag">Network Security Architecture</span>
                         <span class="skill-tag">Penetration Testing</span>
-                        <span class="skill-tag">Vulnerability Assessment</span>
+                        <span class="skill-tag">Vulnerability Research</span>
+                        <span class="skill-tag">CTF Challenge Design</span>
+                        <span class="skill-tag">API Development</span>
                         <span class="skill-tag">Incident Response</span>
                     </div>
                 </div>
                 <div class="card">
-                    <h3 style="color: var(--neon-purple);">Tooling & Languages</h3>
+                    <h3 class="icon-colored-purple">Tooling & Languages</h3>
                     <div class="skills-container">
                         <span class="skill-tag">Python</span>
+                        <span class="skill-tag">Flask</span>
+                        <span class="skill-tag">Docker</span>
+                        <span class="skill-tag">Database Design</span>
                         <span class="skill-tag">Linux / Unix</span>
                         <span class="skill-tag">Wireshark</span>
                         <span class="skill-tag">Nmap</span>
@@ -236,26 +297,22 @@
 
 
     <!-- Contact Section -->
-    <section id="contact" style="text-align: center; padding-bottom: 8rem;">
+    <section id="contact" class="text-center">
         <div class="container">
-            <h2 style="display: block; margin-bottom: 1rem;">Get In Touch</h2>
-            <p style="max-width: 600px; margin: 0 auto 3rem; color: var(--text-secondary);">Currently looking for new
-                opportunities. Whether you have a question or just want to say hi, my inbox is always open.</p>
-            <a href="mailto:mkorevaardorsey@gmail.com" class="btn btn-glow"
-                style="padding: 1rem 2rem; font-size: 1.1rem;">Say Hello</a>
+            <h2 class="mb-1">Get In Touch</h2>
+            <p class="max-width-600">Currently looking for new opportunities. Whether you have a question or just want to say hi, my inbox is always open.</p>
+            <a href="mailto:mkorevaardorsey@gmail.com" class="btn btn-glow btn-large">Say Hello</a>
         </div>
     </section>
 
     <!-- Footer -->
     <footer>
         <div class="container">
-            <div class="social-links">
-                <a href="https://www.linkedin.com/in/mackenzie-korevaar-dorsey-984845284" target="_blank"
-                    title="LinkedIn"><i class="fab fa-linkedin"></i></a>
-                <a href="https://github.com/mackkd" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
+            <div class="social-links" aria-label="Social media links">
+                <a href="https://www.linkedin.com/in/mackenzie-korevaar-dorsey-984845284" target="_blank" title="LinkedIn" rel="noopener noreferrer" aria-label="Visit my LinkedIn profile"><i class="fab fa-linkedin"></i></a>
+                <a href="https://github.com/mackkd" target="_blank" title="GitHub" rel="noopener noreferrer" aria-label="Visit my GitHub profile"><i class="fab fa-github"></i></a>
             </div>
-            <p style="font-family: var(--font-mono); font-size: 0.8rem;">&copy; 2026 Mackenzie Korevaar-Dorsey. Built
-                with &hearts; and CSS.</p>
+            <p class="footer-text">&copy; 2026 Mackenzie Korevaar-Dorsey. Built with &hearts; and CSS.</p>
         </div>
     </footer>
 

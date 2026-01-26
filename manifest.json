@@ -1,0 +1,22 @@
+{
+  "name": "Mackenzie Korevaar-Dorsey - Cybersecurity Portfolio",
+  "short_name": "MackKD Portfolio",
+  "description": "Security Engineer & Aspiring Red Teamer specializing in penetration testing, CTF challenge design, and offensive security operations.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#050505",
+  "theme_color": "#050505",
+  "orientation": "portrait-primary",
+  "icons": [
+    {
+      "src": "/android-chrome-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/android-chrome-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}
