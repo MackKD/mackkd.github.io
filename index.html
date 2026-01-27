@@ -10,7 +10,6 @@
     <meta name="theme-color" content="#050505">
     <link rel="manifest" href="manifest.json">
 
-    <!-- Security Headers -->
     <meta http-equiv="Content-Security-Policy" content="default-src 'self'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com https://cdnjs.cloudflare.com; font-src 'self' https://fonts.gstatic.com https://cdnjs.cloudflare.com; script-src 'self' 'unsafe-inline'; img-src 'self' data:; connect-src 'self';">
     <meta http-equiv="X-Content-Type-Options" content="nosniff">
     <meta http-equiv="X-Frame-Options" content="DENY">
@@ -19,22 +18,14 @@
     <title>Mackenzie Korevaar-Dorsey | Cybersecurity Specialist</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="dns-prefetch" href="https://cdnjs.cloudflare.com">
-    <link
-        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=JetBrains+Mono:wght@400;700&display=swap"
-        rel="stylesheet"
-        crossorigin="anonymous">
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet"
-          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
-          integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
-          crossorigin="anonymous"
-          referrerpolicy="no-referrer">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer">
 </head>
 
 <body>
 
-    <!-- Navigation -->
     <nav aria-label="Main navigation">
         <div class="container">
             <a href="#" class="logo" aria-label="Home">&lt;MackKD /&gt;</a>
@@ -47,7 +38,6 @@
         </div>
     </nav>
 
-    <!-- Hero Section -->
     <section class="hero">
         <div class="container hero-content">
             <h3>Hello, I am</h3>
@@ -64,12 +54,10 @@
         </div>
     </section>
 
-    <!-- Certification & Education Section -->
     <section id="about">
         <div class="container">
             <h2>Education & Certifications</h2>
             <div class="grid">
-                <!-- Education -->
                 <div class="card">
                     <h3><i class="fas fa-university icon-colored-blue"></i> Education</h3>
                     <h4 class="text-white">Western Governors University</h4>
@@ -77,7 +65,6 @@
                     <p class="location-text">Current Student | Focus: Network Defense & Offensive Security</p>
                 </div>
 
-                <!-- Certs -->
                 <div class="card">
                     <h3><i class="fas fa-certificate icon-colored-purple"></i> Certifications</h3>
                     <ul class="list-disc">
@@ -92,7 +79,6 @@
         </div>
     </section>
 
-    <!-- Professional Experience Section -->
     <section id="professional-experience">
         <div class="container">
             <h2>Professional Experience</h2>
@@ -130,7 +116,6 @@
         </div>
     </section>
 
-    <!-- Experience Section -->
     <section id="experience">
         <div class="container">
             <h2>Volunteer Experience</h2>
@@ -182,12 +167,10 @@
         </div>
     </section>
 
-    <!-- Projects Section -->
     <section id="projects">
         <div class="container">
             <h2>Projects</h2>
             <div class="grid">
-                <!-- BSides 2025 CTF Challenge -->
                 <div class="card">
                     <h3>CTF Challenge Creator - BSides Seattle 2025</h3>
                     <p class="job-title mb-1">Architected and deployed a custom FTP service exploitation challenge featuring a preconfigured "pass the hash" vulnerability for BSides Seattle 2025, held at Microsoft Headquarters in Redmond with 1,500 attendees.</p>
@@ -218,7 +201,6 @@
                     </div>
                 </div>
 
-                <!-- BSides 2026 CTF Challenge -->
                 <div class="card">
                     <h3>CTF Challenge Creator - BSides Seattle 2026</h3>
                     <p class="job-title mb-1">Developed a full-stack web application utilizing an internal database for search queries as part of BSides Seattle 2026 CTF competition infrastructure.</p>
@@ -249,7 +231,6 @@
                     </div>
                 </div>
 
-                <!-- Portfolio Project -->
                 <div class="card">
                     <h3>Portfolio Infrastructure</h3>
                     <p class="job-title mb-1">Engineered this responsive portfolio to demonstrate frontend capabilities alongside security endeavors.</p>
@@ -260,10 +241,8 @@
                     </div>
                 </div>
 
-                <!-- GitHub Link Card -->
                 <div class="card flex-center">
-                    <h3><i class="fab fa-github icon-large icon-colored-purple"></i></h3>
-                    <h3>Code Repositories</h3>
+                    <h3><i class="fab fa-github icon-large icon-colored-purple"></i> Code Repositories</h3>
                     <p class="job-title">Explore my security tools and scripting projects.</p>
                     <a href="https://github.com/mackkd" target="_blank" rel="noopener noreferrer" class="btn btn-glow">Visit GitHub</a>
                 </div>
@@ -271,7 +250,6 @@
         </div>
     </section>
 
-    <!-- Skills Section -->
     <section id="skills">
         <div class="container">
             <h2>Technical Arsenal</h2>
@@ -305,22 +283,6 @@
         </div>
     </section>
 
-    <script>
-        // Simple script to toggle mobile menu
-        const menuToggle = document.querySelector('.menu-toggle');
-        const navLinks = document.querySelector('.nav-links');
-
-        if (menuToggle) {
-            menuToggle.addEventListener('click', () => {
-                navLinks.classList.toggle('active');
-            });
-        }
-    </script>
-
-    <!-- Resume Section -->
-
-
-    <!-- Contact Section -->
     <section id="contact" class="text-center">
         <div class="container">
             <h2 class="mb-1">Get In Touch</h2>
@@ -329,7 +291,6 @@
         </div>
     </section>
 
-    <!-- Footer -->
     <footer>
         <div class="container">
             <div class="social-links" aria-label="Social media links">
