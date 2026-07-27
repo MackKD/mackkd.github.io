@@ -109,13 +109,18 @@ h2::after {
 }
 
 .text-gradient {
-    background: var(--gradient-main);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
+    position: relative;
     display: inline-block;
-    transform: translateZ(0);
-    will-change: transform;
+    isolation: isolate;
+}
+
+.text-gradient::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: var(--gradient-main);
+    mix-blend-mode: color;
+    pointer-events: none;
 }
 
 /* Utilities */
