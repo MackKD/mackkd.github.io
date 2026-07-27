@@ -26,23 +26,34 @@
 
 <body>
 
+    <a href="#main" class="skip-link">Skip to main content</a>
+
     <nav aria-label="Main navigation">
         <div class="container">
             <a href="#" class="logo" aria-label="Home">&lt;MackKD /&gt;</a>
-            <div class="nav-links">
+            <button type="button" class="nav-toggle" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="nav-links">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <div class="nav-links" id="nav-links">
                 <a href="#about">About</a>
+                <a href="#professional-experience">Experience</a>
                 <a href="#projects">Projects</a>
                 <a href="#skills">Skills</a>
+                <a href="#achievements">Achievements</a>
                 <a href="#contact">Contact</a>
             </div>
         </div>
     </nav>
 
+    <main id="main">
+
     <section class="hero">
         <div class="container hero-content">
-            <h3>Hello, I am</h3>
+            <p class="hero-greeting">Hello, I am</p>
             <h1>Mackenzie <span class="text-gradient">Korevaar-Dorsey</span></h1>
-            <h2 class="subtitle-large">Security Engineer & Aspiring Red Teamer</h2>
+            <p class="subtitle-large">Security Engineer & Aspiring Red Teamer</p>
             <p>As a dedicated cybersecurity student and active security practitioner, I bridge the gap between academic
                 theory and real-world offensive operations. Specializing in vulnerability research, CTF challenge design,
                 and full-stack application development, I create realistic security scenarios using Flask, Docker, and
@@ -59,14 +70,14 @@
             <h2>Education & Certifications</h2>
             <div class="grid">
                 <div class="card">
-                    <h3><i class="fas fa-university icon-colored-blue"></i> Education</h3>
+                    <h3><i class="fas fa-university icon-colored-blue" aria-hidden="true"></i> Education</h3>
                     <h4 class="text-white">Western Governors University</h4>
                     <p class="job-title">B.S. Cybersecurity and Information Assurance</p>
-                    <p class="location-text">Current Student | Focus: Network Defense & Offensive Security</p>
+                    <p class="location-text">Junior Standing | Focus: Network Defense & Offensive Security</p>
                 </div>
 
                 <div class="card">
-                    <h3><i class="fas fa-certificate icon-colored-purple"></i> Certifications</h3>
+                    <h3><i class="fas fa-certificate icon-colored-purple" aria-hidden="true"></i> Certifications</h3>
                     <ul class="list-disc">
                         <li class="list-item-spaced"><strong>CompTIA Security+</strong></li>
                         <li class="list-item-spaced"><strong>CompTIA Network+</strong></li>
@@ -91,23 +102,23 @@
                 <p class="location-text">Yakima, WA · On-site</p>
                 <ul class="list-unstyled">
                     <li class="list-item-with-icon">
-                        <i class="fas fa-chevron-right list-icon"></i>
+                        <i class="fas fa-chevron-right list-icon" aria-hidden="true"></i>
                         Generated sales leads, contacted customers, prepared quotes, and closed deals to exceed sales targets.
                     </li>
                     <li class="list-item-with-icon">
-                        <i class="fas fa-chevron-right list-icon"></i>
-                        Managed customer database and collaborated with sales team, warehouse staff, and vendors for timely order delivery.
+                        <i class="fas fa-chevron-right list-icon" aria-hidden="true"></i>
+                        Managed customer and inventory databases and collaborated with sales team, warehouse staff, and vendors for timely delivery and customer satisfaction.
                     </li>
                     <li class="list-item-with-icon">
-                        <i class="fas fa-chevron-right list-icon"></i>
+                        <i class="fas fa-chevron-right list-icon" aria-hidden="true"></i>
                         Utilized direct sales, customer service, and cybersecurity skills to identify new business opportunities.
                     </li>
                     <li class="list-item-with-icon-lg">
-                        <i class="fas fa-chevron-right list-icon"></i>
+                        <i class="fas fa-chevron-right list-icon" aria-hidden="true"></i>
                         <strong>Tier 1 Help Desk Support:</strong> Lead support for the local branch, including:
                         <ul class="list-disc">
                             <li class="list-item-spaced">Configuring and managing DHCP, WAN/LAN, VOIP, and subnet systems.</li>
-                            <li class="list-item-spaced">Managed modernization updates: upgrading outdated DSL to fiber optic connections, modernizing/adding access points for complete coverage.</li>
+                            <li class="list-item-spaced">Managed modernization updates: upgraded branch to fiber, modernized/added access points for complete coverage, and migrated to a stronger cloud security posture.</li>
                             <li>Creating and maintaining technical documentation for processes.</li>
                         </ul>
                     </li>
@@ -128,15 +139,15 @@
                 <p class="mb-1">Active contributor to the security community, specializing in offensive security simulations and CTF architecture. Develop full-stack applications, custom vulnerabilities, and containerized infrastructure for large-scale security competitions.</p>
                 <ul class="list-unstyled">
                     <li class="list-item-with-icon">
-                        <i class="fas fa-chevron-right list-icon"></i>
+                        <i class="fas fa-chevron-right list-icon" aria-hidden="true"></i>
                         Architected custom exploitation challenges for <strong>BSides Seattle 2025</strong>, including custom vulnerability implementation and automated patching solutions.
                     </li>
                     <li class="list-item-with-icon">
-                        <i class="fas fa-chevron-right list-icon"></i>
+                        <i class="fas fa-chevron-right list-icon" aria-hidden="true"></i>
                         Lead challenge designer for <strong>BSides Seattle 2026</strong>, developing Flask-based web applications with Docker containerization and API key authentication systems.
                     </li>
                     <li class="list-item-with-icon">
-                        <i class="fas fa-chevron-right list-icon"></i>
+                        <i class="fas fa-chevron-right list-icon" aria-hidden="true"></i>
                         Coordinate technical teams to build multi-stage Active Directory compromise scenarios and database-driven CTF infrastructure.
                     </li>
                 </ul>
@@ -151,15 +162,15 @@
                 <p class="mb-1">Provide technical support for chapter events and presentations, ensuring seamless delivery of security education and professional development content.</p>
                 <ul class="list-unstyled">
                     <li class="list-item-with-icon">
-                        <i class="fas fa-chevron-right list-icon"></i>
+                        <i class="fas fa-chevron-right list-icon" aria-hidden="true"></i>
                         Set up and configure audio and visual equipment for in-person and hybrid events.
                     </li>
                     <li class="list-item-with-icon">
-                        <i class="fas fa-chevron-right list-icon"></i>
+                        <i class="fas fa-chevron-right list-icon" aria-hidden="true"></i>
                         Ensure functionality and connectivity for online audience participation and engagement.
                     </li>
                     <li class="list-item-with-icon">
-                        <i class="fas fa-chevron-right list-icon"></i>
+                        <i class="fas fa-chevron-right list-icon" aria-hidden="true"></i>
                         Provide technical support to speakers, ensuring clear presentation delivery without technical difficulties.
                     </li>
                 </ul>
@@ -176,19 +187,19 @@
                     <p class="job-title mb-1">Architected and deployed a custom FTP service exploitation challenge featuring a preconfigured vulnerability in the password hashing algorithm for BSides Seattle 2025, held at Microsoft Headquarters in Redmond with 1,500 attendees.</p>
                     <ul class="list-unstyled mb-1">
                         <li class="list-item-with-icon">
-                            <i class="fas fa-chevron-right list-icon"></i>
+                            <i class="fas fa-chevron-right list-icon" aria-hidden="true"></i>
                             Designed and implemented custom vulnerability from scratch in FTP service source code
                         </li>
                         <li class="list-item-with-icon">
-                            <i class="fas fa-chevron-right list-icon"></i>
+                            <i class="fas fa-chevron-right list-icon" aria-hidden="true"></i>
                             Deployed across 35 teams, generating 1,490 total flag submissions throughout competition
                         </li>
                         <li class="list-item-with-icon">
-                            <i class="fas fa-chevron-right list-icon"></i>
+                            <i class="fas fa-chevron-right list-icon" aria-hidden="true"></i>
                             Created source code-based challenge requiring code review to identify and patch vulnerability
                         </li>
                         <li class="list-item-with-icon">
-                            <i class="fas fa-chevron-right list-icon"></i>
+                            <i class="fas fa-chevron-right list-icon" aria-hidden="true"></i>
                             Developed automated patching script and published comprehensive writeup post-competition
                         </li>
                     </ul>
@@ -206,19 +217,19 @@
                     <p class="job-title mb-1">Developed a full-stack web application utilizing an internal database for search queries as part of BSides Seattle 2026 CTF competition infrastructure.</p>
                     <ul class="list-unstyled mb-1">
                         <li class="list-item-with-icon">
-                            <i class="fas fa-chevron-right list-icon"></i>
+                            <i class="fas fa-chevron-right list-icon" aria-hidden="true"></i>
                             Built Flask-based application with database integration for dynamic search functionality
                         </li>
                         <li class="list-item-with-icon">
-                            <i class="fas fa-chevron-right list-icon"></i>
+                            <i class="fas fa-chevron-right list-icon" aria-hidden="true"></i>
                             Implemented secure API key authentication and management system
                         </li>
                         <li class="list-item-with-icon">
-                            <i class="fas fa-chevron-right list-icon"></i>
+                            <i class="fas fa-chevron-right list-icon" aria-hidden="true"></i>
                             Automated deployment and startup processes using Dockerfiles for containerized environment
                         </li>
                         <li class="list-item-with-icon">
-                            <i class="fas fa-chevron-right list-icon"></i>
+                            <i class="fas fa-chevron-right list-icon" aria-hidden="true"></i>
                             Designed backend architecture to handle concurrent database queries across multiple teams
                         </li>
                     </ul>
@@ -242,7 +253,7 @@
                 </div>
 
                 <div class="card flex-center">
-                    <h3><i class="fab fa-github icon-large icon-colored-purple"></i> Code Repositories</h3>
+                    <h3><i class="fab fa-github icon-large icon-colored-purple" aria-hidden="true"></i> Code Repositories</h3>
                     <p class="job-title">Explore my security tools and scripting projects.</p>
                     <a href="https://github.com/mackkd" target="_blank" rel="noopener noreferrer" class="btn btn-glow">Visit GitHub</a>
                 </div>
@@ -283,23 +294,66 @@
         </div>
     </section>
 
+    <section id="achievements">
+        <div class="container">
+            <h2>Achievements & Community Service</h2>
+            <div class="grid">
+                <div class="card">
+                    <h3><i class="fas fa-award icon-colored-blue" aria-hidden="true"></i> Academic Honors</h3>
+                    <ul class="list-unstyled">
+                        <li class="list-item-with-icon"><i class="fas fa-chevron-right list-icon" aria-hidden="true"></i>Honor Society / Dean's List, Western Governors University</li>
+                        <li class="list-item-with-icon"><i class="fas fa-chevron-right list-icon" aria-hidden="true"></i>97th percentile National Cyber League ranking (171 / 4,678)</li>
+                    </ul>
+                </div>
+                <div class="card">
+                    <h3><i class="fas fa-flag icon-colored-purple" aria-hidden="true"></i> CTF & Range Completions</h3>
+                    <ul class="list-unstyled">
+                        <li class="list-item-with-icon"><i class="fas fa-chevron-right list-icon" aria-hidden="true"></i>Completed Bandit wargame on OverTheWire.org</li>
+                        <li class="list-item-with-icon"><i class="fas fa-chevron-right list-icon" aria-hidden="true"></i>Completed Tier 0, 1, and 2 HackTheBox challenges</li>
+                    </ul>
+                </div>
+                <div class="card">
+                    <h3><i class="fas fa-hand-holding-heart icon-colored-blue" aria-hidden="true"></i> Community Service</h3>
+                    <ul class="list-unstyled">
+                        <li class="list-item-with-icon"><i class="fas fa-chevron-right list-icon" aria-hidden="true"></i>Volunteer, BSides Security Conference</li>
+                        <li class="list-item-with-icon"><i class="fas fa-chevron-right list-icon" aria-hidden="true"></i>15 years volunteering with Relay for Life</li>
+                    </ul>
+                </div>
+                <div class="card">
+                    <h3><i class="fas fa-users icon-colored-purple" aria-hidden="true"></i> Memberships</h3>
+                    <div class="skills-container">
+                        <span class="skill-tag">WGU Cybersecurity Club</span>
+                        <span class="skill-tag">ISSA</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <section id="contact" class="text-center">
         <div class="container">
             <h2 class="mb-1">Get In Touch</h2>
             <p class="max-width-600">Currently looking for new opportunities. Whether you have a question or just want to say hi, my inbox is always open.</p>
-            <a href="mailto:&#109;&#107;&#111;&#114;&#101;&#118;&#97;&#97;&#114;&#100;&#111;&#114;&#115;&#101;&#121;&#64;&#103;&#109;&#97;&#105;&#108;&#46;&#99;&#111;&#109;" class="btn btn-glow btn-large">Say Hello</a>
+            <div class="flex-gap flex-center">
+                <a href="mailto:&#109;&#107;&#111;&#114;&#101;&#118;&#97;&#97;&#114;&#100;&#111;&#114;&#115;&#101;&#121;&#64;&#103;&#109;&#97;&#105;&#108;&#46;&#99;&#111;&#109;" class="btn btn-glow btn-large">Say Hello</a>
+                <a href="tel:+15099457159" class="contact-phone"><i class="fas fa-phone icon-colored-blue" aria-hidden="true"></i> (509) 945-7159</a>
+            </div>
         </div>
     </section>
+
+    </main>
 
     <footer>
         <div class="container">
             <div class="social-links" aria-label="Social media links">
-                <a href="https://www.linkedin.com/in/mackenzie-korevaar-dorsey-984845284" target="_blank" title="LinkedIn" rel="noopener noreferrer" aria-label="Visit my LinkedIn profile"><i class="fab fa-linkedin"></i></a>
-                <a href="https://github.com/mackkd" target="_blank" title="GitHub" rel="noopener noreferrer" aria-label="Visit my GitHub profile"><i class="fab fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/mackenzie-korevaar-dorsey-984845284" target="_blank" title="LinkedIn" rel="noopener noreferrer" aria-label="Visit my LinkedIn profile"><i class="fab fa-linkedin" aria-hidden="true"></i></a>
+                <a href="https://github.com/mackkd" target="_blank" title="GitHub" rel="noopener noreferrer" aria-label="Visit my GitHub profile"><i class="fab fa-github" aria-hidden="true"></i></a>
             </div>
             <p class="footer-text">&copy; 2026 Mackenzie Korevaar-Dorsey. Built with &hearts; and CSS.</p>
         </div>
     </footer>
+
+    <script src="script.js" defer></script>
 
 </body>
 
