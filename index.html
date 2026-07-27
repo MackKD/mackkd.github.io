@@ -11,8 +11,6 @@
     <link rel="manifest" href="manifest.json">
 
     <meta http-equiv="Content-Security-Policy" content="default-src 'self'; style-src 'self' https://fonts.googleapis.com https://cdnjs.cloudflare.com; font-src 'self' https://fonts.gstatic.com https://cdnjs.cloudflare.com; script-src 'self'; img-src 'self' data:; connect-src 'self';">
-    <meta http-equiv="X-Content-Type-Options" content="nosniff">
-    <meta http-equiv="X-Frame-Options" content="DENY">
     <meta name="referrer" content="strict-origin-when-cross-origin">
 
     <title>Mackenzie Korevaar-Dorsey | Cybersecurity Specialist</title>
@@ -50,7 +48,7 @@
     <main id="main">
 
     <section class="hero">
-        <div class="container hero-content">
+        <div class="container">
             <p class="hero-greeting">Hello, I am</p>
             <h1>Mackenzie <span class="text-gradient">Korevaar-Dorsey</span></h1>
             <p class="subtitle-large">Security Engineer & Aspiring Red Teamer</p>
@@ -214,30 +212,30 @@
 
                 <div class="card">
                     <h3>CTF Challenge Creator - BSides Seattle 2026</h3>
-                    <p class="job-title mb-1">Developed a full-stack web application utilizing an internal database for search queries as part of BSides Seattle 2026 CTF competition infrastructure.</p>
+                    <p class="job-title mb-1">Designed and built "News Clipper," a Flask news platform for BSides Seattle 2026 centered on an Insecure Direct Object Reference (IDOR) vulnerability in the user profile endpoint.</p>
                     <ul class="list-unstyled mb-1">
                         <li class="list-item-with-icon">
                             <i class="fas fa-chevron-right list-icon" aria-hidden="true"></i>
-                            Built Flask-based application with database integration for dynamic search functionality
+                            Engineered a broken access control flaw (OWASP A01, CWE-639) allowing any authenticated user to view another account's profile
                         </li>
                         <li class="list-item-with-icon">
                             <i class="fas fa-chevron-right list-icon" aria-hidden="true"></i>
-                            Implemented secure API key authentication and management system
+                            Built the Flask app with session-based authentication, CSRF protection, and article search
                         </li>
                         <li class="list-item-with-icon">
                             <i class="fas fa-chevron-right list-icon" aria-hidden="true"></i>
-                            Automated deployment and startup processes using Dockerfiles for containerized environment
+                            Wrote companion exploit and auto-patch scripts to demonstrate and remediate the vulnerability
                         </li>
                         <li class="list-item-with-icon">
                             <i class="fas fa-chevron-right list-icon" aria-hidden="true"></i>
-                            Designed backend architecture to handle concurrent database queries across multiple teams
+                            Containerized the challenge and deployed it on shared competition infrastructure
                         </li>
                     </ul>
                     <div class="skills-container">
+                        <span class="skill-tag">IDOR</span>
+                        <span class="skill-tag">Broken Access Control</span>
                         <span class="skill-tag">Flask</span>
                         <span class="skill-tag">Docker</span>
-                        <span class="skill-tag">Database Design</span>
-                        <span class="skill-tag">API Development</span>
                         <span class="skill-tag">Python</span>
                     </div>
                 </div>
