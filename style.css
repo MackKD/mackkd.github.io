@@ -469,12 +469,6 @@ footer {
     font-size: 0.8rem;
 }
 
-.icon-large {
-    color: var(--neon-purple);
-    font-size: 2rem;
-    margin-bottom: 0.5rem;
-}
-
 .icon-colored-blue {
     color: var(--neon-blue);
 }
